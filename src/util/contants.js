@@ -23,3 +23,26 @@ export const ProductCardData = [
     image: defaultImage,
   }
 ];
+
+export const CategoryCardData = [
+  {
+    id: 1,
+    title: "Flowers",
+    image: defaultImage,
+  },
+  {
+    id: 2,
+    title: "Gifts",
+    image: defaultImage,
+  },
+  {
+    id: 3,
+    title: "Home Decor",
+    image: defaultImage,
+  },
+  {
+    id: 4,
+    title: "Accessories",
+    image: defaultImage,
+  }
+];
