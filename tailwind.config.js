@@ -4,4 +4,17 @@ export default {
   
     
     plugins: [],
+    theme: {
+        extend: {
+          spacing: {
+            'calc1': 'calc(100%-250px)',
+            "calc2": "calc(100%)",
+            
+          },
+          screens: {
+            'min-900': '900px',
+            "min-300": "300px",
+          },
+        },
+      },
   };
