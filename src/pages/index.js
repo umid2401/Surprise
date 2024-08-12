@@ -1,20 +1,22 @@
-import Layout from "./Layout";
-import Dashboard from "./Dashboard"
-import Driver from "./driver_pages/Driver";
-import History from "./driver_pages/History";
-import Location from "./driver_pages/Location";
-import Schedule from "./driver_pages/Schedule";
-import Support from "./driver_pages/Support";
-import Admin from "./admin_pages/Admin";
-import Products from "./admin_pages/Products";
-import Settings from "./admin_pages/Settings";
-import UserManagment from "./admin_pages/UserManagment";
-import Booking from "./owner_pages/Booking";
-import Drivermanagment from "./owner_pages/Drivermanagment";
-import Earnings from "./owner_pages/Earnings";
-import Reports from "./owner_pages/Reports";
-export {Layout,  Dashboard, Driver, History,
-    Location, Schedule, Support, Admin, Products , Settings, UserManagment,
-    Booking, Drivermanagment, Earnings, Reports
 
+
+import Driver from "./driverPages/Driver";
+import History from "./driverPages/History";
+import Location from "./driverPages/Location";
+import Schedule from "./driverPages/Schedule";
+import Support from "./driverPages/Support";
+import Admin from "./adminPages/Admin";
+import Products from "./adminPages/Products";
+import Settings from "./adminPages/Settings";
+import UserManagment from "./adminPages/UserManagment";
+import Booking from "./ownerPages/Booking";
+import Drivermanagment from "./ownerPages/Drivermanagment";
+import Earnings from "./ownerPages/Earnings";
+import Reports from "./ownerPages/Reports";
+import HomePageDashboardAdmin from "./adminPages/HomePageDashboardAdmin";
+import HomePageOwnerDashboard from "./ownerPages/HomePageOwnerDashboard";
+import HomePageDriverDashboard from "./driverPages/HomePageDriverDashboard";
+export { Driver, History,
+    Location, Schedule, Support, Admin, Products , Settings, UserManagment,
+    Booking, Drivermanagment, Earnings, Reports, HomePageDashboardAdmin, HomePageOwnerDashboard,HomePageDriverDashboard
 };
