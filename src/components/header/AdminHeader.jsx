@@ -1,32 +1,26 @@
-import { FaBars } from "react-icons/fa";
-import { useDispatch, useSelector} from "react-redux";
-import {toogleSidebar} from "../../features/slice/toogleSidebar";
+import { FaBell, FaCog } from "react-icons/fa";
+
+import ToogleButton from "./toogleButton/ToogleButton";
 
 export default function Topbar() {
-  const dispatch = useDispatch();
-  const isSidebarOpen = useSelector((state)=>state.sidebar.count);
-  const name =()=>{
-   
-    alert(isSidebarOpen)
-  }
-  
   return (
     <div className="w-full  ">
-      <div className="flex justify-between items-center bg-white py-8 px-4 shadow-md">
-        <div onClick={()=>dispatch(toogleSidebar())} className="menu flex gap-x-2  items-center font-medium text-[darkslateblue] ">
-          <FaBars  className="cursor-pointer text-[26px]" />
-        </div>
-
-        <div className="flex items-center">
-          <input
-            type="text"
-            placeholder="Search for something"
-            className="border p-2 rounded-lg mr-4"
+      <div className="flex justify-between items-center bg-white py-6 px-4 shadow-md">
+        <ToogleButton />
+        <div className="flex items-center space-x-4">
+          <FaCog
+            fontSize="24px"
+            className="text-gray-500 cursor-pointer hover:text-gray-700"
           />
+          <FaBell
+            fontSize="24px"
+            className="text-red-500 cursor-pointer hover:text-red-700"
+          />
+
           <img
             src="https://via.placeholder.com/150"
             alt="Profile"
-            className="w-10 h-10 rounded-full"
+            className="w-8 h-8 rounded-full object-cover cursor-pointer"
           />
         </div>
       </div>

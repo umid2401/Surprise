@@ -4,6 +4,7 @@ import { toogleSidebar } from "../../features/slice/toogleSidebar";
 import { FaGift, FaTimes } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 
+// eslint-disable-next-line react/prop-types
 export default function Sidebar({ routes, title }) {
   const dispatch = useDispatch();
   const hideMenu = () =>{
@@ -15,9 +16,9 @@ export default function Sidebar({ routes, title }) {
   return (
     <div className="bg-white min-900:h-[100vh] min-300:h-[100%] min-300:w-[75%] min-900:w-full sticky top-0 left-0 py-8 px-4 border-r border-[lavender]">
       <div className="mini-header flex items-center justify-between">
-        <h2 className="text-[28px] font-medium text-[darkslateblue] px-4  mb-6 flex items-center gap-x-2">
+        <h2 className="text-[26px] font-medium text-[darkslateblue] px-4 mx-5  mb-6 flex items-center gap-x-2">
           <div>
-            <FaGift className="sm:text-[30px]" />
+            <FaGift className="sm:text-[26px]" />
           </div>
           <span>{title}</span>
         </h2>
@@ -31,11 +32,12 @@ export default function Sidebar({ routes, title }) {
 
       <div className="links w-full flex flex-col gap-4 ">
         {routes &&
+          // eslint-disable-next-line react/prop-types
           routes?.map(({ name, path, icon }, index) => (
             <NavLink
               onClick={hideMenu}
               className={({ isActive }) =>
-                `font-medium hover:bg-[whitesmoke] px-11 rounded-[10px] items-center flex gap-x-4 text-[16px] leading-6 py-3 ${
+                `font-medium hover:bg-[whitesmoke] px-11 rounded-[10px] items-center flex gap-x-4 text-[15px] leading-6 py-3 ${
                   isActive
                     ? "bg-[whitesmoke] text-blue-500 link"
                     : "border-transparent text-[darkgrey]"

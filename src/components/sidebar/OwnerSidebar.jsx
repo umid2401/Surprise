@@ -9,22 +9,22 @@ export default function OwnerSidebar() {
         {
           name: "Earnings",
           path: "/dashboard/owner/earn",
-          icon: <FaMapLocation className="text-[23px]" />,
+          icon: <FaMapLocation className="text-[20px]" />,
         },
         {
           name: "Driver",
           path: "/dashboard/owner/driver",
-          icon: <FaCog className="text-[23px]" />,
+          icon: <FaCog className="text-[20px]" />,
         },
         {
           name: "Reports",
           path: "/dashboard/owner/reports",
-          icon: <FaTag className="text-[23px]" />,
+          icon: <FaTag className="text-[20px]" />,
         },
         {
           name: "Products",
           path: "/products",
-          icon: <FaBox className="text-[23px]" />,
+          icon: <FaBox className="text-[20px]" />,
         },
       ];
   return (

@@ -1,6 +1,7 @@
 import { useSelector } from 'react-redux';
 import { Outlet } from 'react-router-dom';
 
+// eslint-disable-next-line react/prop-types
 const BaseLayout = ({ SidebarComponent,     HeaderComponent }) => {
     const isSidebarOpen = useSelector((state) => state.sidebar.isOpen);
   return (
@@ -8,9 +9,9 @@ const BaseLayout = ({ SidebarComponent,     HeaderComponent }) => {
       <aside
         className={`${
           isSidebarOpen
-            ? "min-300:translate-x-0"
-            : "min-900:hidden min-300:translate-x-[-100%]"
-        } min-900:sticky min-900:translate-x-0 min-900:top-0 min-900:left-0 min-900:h-[100vh] min-300:h-screen w-full min-900:w-[240px] min-300:absolute z-20`}
+            ? "min-300:translate-x-[-100%]"
+            : "min-900:hidden "
+        } min-900:sticky min-900:translate-x-0 min-900:top-0 min-900:left-0 min-900:h-[100vh] min-300:h-screen w-full min-900:w-[350px] min-300:absolute z-20`}
       >
         <SidebarComponent />
       </aside>

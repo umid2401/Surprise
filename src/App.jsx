@@ -8,6 +8,7 @@ import {
   HomePageDashboardAdmin,
   HomePageOwnerDashboard,
   Location,
+  Login,
   Products,
   Schedule,
   Settings,
@@ -27,6 +28,12 @@ export default function App() {
     <Provider store={store}>
       <BrowserRouter>
         <Routes>
+          <Route path="/login" element={
+            <>
+              <PageTitle title="Login"/>
+              <Login/>
+            </>}
+            />
           <Route path="/dashboard/admin" element={<AdminLayout />}>
           <Route
               path="/dashboard/admin"

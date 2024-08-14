@@ -7,7 +7,7 @@ export default {
     theme: {
         extend: {
           spacing: {
-            'calc1': 'calc(100%-250px)',
+            'calc1': 'calc(100%-270px)',
             "calc2": "calc(100%)",
             
           },

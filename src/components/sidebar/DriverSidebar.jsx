@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { FaBox, FaCog, FaHome, FaTag, FaUser } from 'react-icons/fa';
 import Sidebar from './Sidebar';
 
@@ -8,22 +8,22 @@ export default function DriverSidebar() {
         {
           name: "History",
           path: "/dashboard/driver/history",
-          icon: <FaUser className="text-[23px]" />,
+          icon: <FaUser className="text-[20px]" />,
         },
         {
           name: "Location",
           path: "/dashboard/driver/location",
-          icon: <FaCog className="text-[23px]" />,
+          icon: <FaCog className="text-[20px]" />,
         },
         {
           name: "Schedule",
           path: "/dashboard/driver/schedule",
-          icon: <FaTag className="text-[23px]" />,
+          icon: <FaTag className="text-[20px]" />,
         },
         {
           name: "Support",
           path: "/dashboard/driver/support",
-          icon: <FaBox className="text-[23px]" />,
+          icon: <FaBox className="text-[20px]" />,
         },
       ];
   return (
