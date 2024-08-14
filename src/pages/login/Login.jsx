@@ -22,10 +22,10 @@ const LoginPage = () => {
       <div className="w-full min-900:w-1/2 flex flex-col items-center justify-center p-8 bg-gray-50">
      
         
-        <div className="max-w-md w-full bg-white shadow-lg rounded-lg p-8 space-y-6">
+        <div className="max-w-md w-full bg-white sm:shadow-lg  rounded-lg sm:p-8 p-2 space-y-6">
           <h2 className="text-3xl font-semibold mb-4 text-center">Surprise Manager</h2>
           <form>
-            <div className="mb-4">
+            <div className="mb-4 w-full">
               <label className="block mb-4 text-sm font-medium text-gray-700">Email Address</label>
               <input
                 type="email"
