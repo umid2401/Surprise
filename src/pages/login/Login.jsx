@@ -26,7 +26,7 @@ const LoginPage = () => {
           <h2 className="text-[17px] text-[#646464] font-medium mb-4 text-center uppercase">Surprise Manager</h2>
           <form>
             <div className="mb-4 w-full">
-              <label className="block mb-4 text-sm font-medium text-gray-700">Email Address</label>
+              <label className="block sm:mb-4 mb-2 text-sm font-medium text-gray-700">Email Address</label>
               <input
                 type="email"
                 placeholder="Enter your email"
@@ -35,7 +35,7 @@ const LoginPage = () => {
               />
             </div>
             <div className="mb-4 relative">
-              <label className="block mb-4 text-sm font-medium text-gray-700">Password</label>
+              <label className="block sm:mb-4 mb-2text-sm font-medium text-gray-700">Password</label>
               <div className='flex relative items-center justify-center'>
 
               <input
