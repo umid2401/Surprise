@@ -1,75 +1,73 @@
-
-// eslint-disable-next-line no-unused-vars
 import React, { useState } from 'react';
-import { FaRegEye, FaRegEyeSlash } from 'react-icons/fa';
-import { useNavigate } from 'react-router-dom';
+import { FaEye, FaEyeSlash } from 'react-icons/fa'; // Parol ko'rsatish ikonkalari
 
-const Login = () => {
-  const login_state = {email:"",password:""};
-  const [state, setState] = useState(login_state);
+const LoginPage = () => {
   const [showPassword, setShowPassword] = useState(false);
-  const navigate = useNavigate();
-  const handleSubmit = (e) => {
-    e.preventDefault();
-   setState(login_state);
-   navigate("/dashboard/admin")
-   
+
+  const togglePasswordVisibility = () => {
+    setShowPassword(!showPassword);
   };
-  const handelChange = (e) =>{
-  const  {name, value}=e.target;
-    setState({...state, [name]:value})
-  }
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-100">
-      <div className="w-full max-w-md bg-white p-8 rounded-lg shadow-lg">
-        <h2 className="text-2xl font-bold mb-6 text-center text-gray-700">Login</h2>
-        <form onSubmit={handleSubmit}>
-          <div className="mb-4">
-            <label className="block text-gray-600 text-sm font-bold mb-2" htmlFor="email">
-              Email
-            </label>
-            <input
-              type="email"
-              id="email"
-              placeholder='Email'
-              name='email'
-              value={state.email}
-              onChange={handelChange}
-              className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
-              required
-              
-            />
-          </div>
-          <div className="mb-6 relative">
-            <label className="block text-gray-600 text-sm font-bold mb-2" htmlFor="password">
-              Password
-            </label>
-            <input
-              type={showPassword?"text":"password"}
-              id="password"
-              placeholder='********'
-              name='password'
-              value={state.password}
-              onChange={handelChange}
-              className=" w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
-              required
-            />
-            <div className='absolute right-2 top-1/2 translate-y-1/2'>
-                {showPassword?(<FaRegEyeSlash onClick={()=>setShowPassword(!showPassword)}/>):<FaRegEye onClick={()=>setShowPassword(!showPassword)}/>}
-          
+    <div className="flex h-screen">
+      {/* Chap tarafdagi rasm */}
+      <div 
+        className="w-1/2  h-screen hidden min-900:flex items-center justify-center bg-cover bg-[midnightblue] bg-center" 
+      
+      >
+        <img className=' object-cover ' src="/src/assets/Images/loginimage.png" alt="err"/>
+      </div>
+
+      
+      <div className="w-full min-900:w-1/2 flex flex-col items-center justify-center p-8 bg-gray-50">
+     
+        
+        <div className="max-w-md w-full bg-white shadow-lg rounded-lg p-8 space-y-6">
+          <h2 className="text-3xl font-semibold mb-4 text-center">Surprise Manager</h2>
+          <form>
+            <div className="mb-4">
+              <label className="block mb-4 text-sm font-medium text-gray-700">Email Address</label>
+              <input
+                type="email"
+                placeholder="Enter your email"
+                className="mt-1 block w-full border border-gray-300 rounded-[5px] shadow-sm outline-none focus:ring focus:ring-indigo-500 focus:ring-opacity-50 py-2 px-4"
+                required
+              />
             </div>
-          </div>
-          <button
-            type="submit"
-            className="w-full bg-blue-500 text-white py-2 px-4 rounded-md shadow-sm hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
-          >
-            Login
-          </button>
-        </form>
+            <div className="mb-4 relative">
+              <label className="block mb-4 text-sm font-medium text-gray-700">Password</label>
+              <div className='flex relative items-center justify-center'>
+
+              <input
+                type={showPassword ? 'text' : 'password'}
+                placeholder="Enter your password"
+                className=" block w-full border border-gray-300 rounded-[5px] shadow-sm outline-none  focus:ring focus:ring-indigo-500 focus:ring-opacity-50 py-2 px-4"
+                required
+              />
+                 <button
+                type="button"
+                onClick={togglePasswordVisibility}
+                className="absolute  w-12 h-[100%] shadow-sm border border-gray-300 bg-white right-0 rounded-r-[5px]   flex items-center px-3 cursor-pointer"
+              >
+                {showPassword ? <FaEyeSlash className="text-gray-500 text-[20px]" /> : <FaEye className="text-gray-500 text-[16px]" />}
+              </button>
+              </div>
+           
+            </div>
+            <button
+              type="submit"
+              className="w-full bg-[midnightblue] text-white py-2  mt-6 px-4 rounded-[5px] shadow-md hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50 transition duration-200"
+            >
+              Login
+            </button>
+            <p className="mt-4 text-sm text-gray-600 text-center">
+              Don't have an account? <a href="#" className="text-indigo-600 hover:text-indigo-700">Sign Up</a>
+            </p>
+          </form>
+        </div>
       </div>
     </div>
   );
 };
 
-export default Login;
+export default LoginPage;
