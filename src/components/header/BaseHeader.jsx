@@ -82,7 +82,7 @@ export default function BaseHeader({ title }) {
                   key={route.path}
                   to={route.path}
                   className=" flex gap-x-3 items-center  py-2 px-4 transition-colors duration-300 hover:bg-gray-200"
-                  activeClassName="text-blue-500" // aktif holat uchun class qo'shish
+                  
                 >
                   {route.icon}
                   <span className="text-[16px] text-[grey]">{route.label}</span>
