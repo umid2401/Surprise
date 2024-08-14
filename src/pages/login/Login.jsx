@@ -1,7 +1,7 @@
 
 // eslint-disable-next-line no-unused-vars
 import React, { useState } from 'react';
-import { FaEye, FaEyeDropper, FaEyeSlash, FaRegEye, FaRegEyeSlash } from 'react-icons/fa';
+import { FaRegEye, FaRegEyeSlash } from 'react-icons/fa';
 import { useNavigate } from 'react-router-dom';
 
 const Login = () => {

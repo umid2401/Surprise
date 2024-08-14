@@ -1,14 +1,9 @@
 
-import ToogleButton from "./toogleButton/ToogleButton";
+import BaseHeader from "./BaseHeader";
+
 
 export default function OwnerHeader() {
   return (
-    <div className="w-full bg-white shadow-md ">
-      <div className="flex justify-between items-center  py-6 px-4 ">
-        <ToogleButton />
-       
-      </div>
-     
-    </div>
+   <BaseHeader title="Product Owner"/>
   );
 }

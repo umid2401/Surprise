@@ -1,8 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import {
-  Admin,
-  Booking,
-  Driver,
   Earnings,
   History,
   HomePageDashboardAdmin,
