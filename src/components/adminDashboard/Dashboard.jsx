@@ -15,7 +15,7 @@ export default function Dashboard() {
   ];
 
   return (
-    <div className="w-full">
+    <div className="w-full ">
       <div className="flex items-center justify-between border-b-[1px] pb-4 border-[#cfb7b7]">
         <div className="text-button">
           <h2 className="text-left font-bold text-[20px] text-[darkslateblue]">
@@ -34,10 +34,10 @@ export default function Dashboard() {
           cards?.map((item, index) => (
             <div
               key={index}
-              className="bg-white shadow-lg rounded-2xl p-4    "
+              className="bg-white shadow-lg rounded-2xl p-4 relative !z-[10]   "
             >
               <div className="flex justify-between items-center mb-4">
-                <div className="bg-blue-500 p-6 rounded-full text-white  "></div>
+                <div className="bg-blue-500 p-6 rounded-full text-white absolute top-[-20px]  "></div>
               </div>
               <h2 className="text-left  font-bold text-base sm:text-lg">App Development</h2>
               <h3 className="text-lg text-left font-semibold mb-2">Title</h3>

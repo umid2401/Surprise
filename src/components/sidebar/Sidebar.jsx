@@ -31,7 +31,7 @@ export default function Sidebar({ routes, title }) {
       </div>
 
       <div className="links w-full flex flex-col gap-4 ">
-        <h2>Hello</h2>
+        
         {routes &&
           // eslint-disable-next-line react/prop-types
           routes?.map(({ name, path, icon }, index) => (
