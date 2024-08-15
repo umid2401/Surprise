@@ -1,10 +1,14 @@
 
 import Sidebar from "./Sidebar";
-import { FaCog, FaTag, FaUser } from "react-icons/fa";
+import { FaCog, FaHome, FaTachometerAlt, FaTag, FaUser } from "react-icons/fa";
 
 export default function AdminSidebar() {
   const adminRoutes = [
-   
+    {
+      name: "Dashboard",
+      path: "/dashboard/admin",
+      icon: <FaHome className="text-[20px]" />,
+    },
     {
       name: "Products",
       path: "/dashboard/admin/products",

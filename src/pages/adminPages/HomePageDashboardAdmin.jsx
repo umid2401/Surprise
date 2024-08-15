@@ -1,3 +1,4 @@
+import Dashboard from "../../components/adminDashboard/Dashboard";
 
 
 
@@ -5,7 +6,7 @@
 export default function HomePageDashboardAdmin() {
   return (
     <div className="text-center"> 
-      Home Page Admin dashboard
+    <Dashboard/>
     </div>
   )
 }

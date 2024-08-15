@@ -25,7 +25,7 @@ export default function BaseHeader({ title }) {
       label: "Change Password",
     },
     {
-      path: "/logout",
+      path: "/login",
       icon: <FaSignOutAlt className="text-[#962e2e] text-[20px]" />,
       label: "Logout",
     },
@@ -33,9 +33,10 @@ export default function BaseHeader({ title }) {
   return (
     <div className="w-full z-20 static">
       <div className="flex justify-between items-center bg-white py-6 px-4 shadow-md">
+       
+        <div className="header-text flex items-center gap-x-2">
         <ToogleButton />
-        <div className="header-text">
-          <span className="text-[26px] font-medium text-[darkslateblue]">
+          <span className="text-[24px] font-medium text-[darkslateblue]">
             Surprise
           </span>
         </div>
@@ -68,6 +69,7 @@ export default function BaseHeader({ title }) {
                 <span className="font-normal text-[darkgrey] text-[15px] sm:block hidden">
                   {title}
                 </span>
+                
               </div>
             </div>
             <div
@@ -90,11 +92,7 @@ export default function BaseHeader({ title }) {
               ))}
             </div>
           </div>
-          <button className="hidden items-center sm:flex  space-x-2 bg-[darkslateblue] text-white  focus:outline-none focus:ring-2  font-medium rounded-lg text-sm px-4 py-2">
-            {/* < className="h-5 w-5" /> */}
-            <span>Logout</span>
-            <FaSignOutAlt />
-          </button>
+          
         </div>
       </div>
     </div>

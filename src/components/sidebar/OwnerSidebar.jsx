@@ -5,7 +5,7 @@ import Sidebar from './Sidebar';
 
 export default function OwnerSidebar() {
     const ownerRoutes = [
-        { name: "Booking", path: "/dashboard/owner/earnings", icon: <FaHome className="text-[23px]" /> },
+        { name: "Dashboard", path: "/dashboard/owner", icon: <FaHome className="text-[23px]" /> },
         {
           name: "Earnings",
           path: "/dashboard/owner/earn",

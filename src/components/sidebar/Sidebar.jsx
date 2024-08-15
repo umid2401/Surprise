@@ -14,7 +14,7 @@ export default function Sidebar({ routes, title }) {
   }
 
   return (
-    <div className="bg-white min-900:h-[100vh] min-300:h-[100%] min-300:w-[80%] sm:w-[50%] min-900:w-full sticky top-0 left-0 py-8 px-4 border-r border-[lavender]">
+    <div className="bg-white min-900:h-[100vh] min-300:h-[100%] min-300:w-[80%] sm:w-[50%] min-900:w-full py-8 px-4 border-r border-[lavender]">
       <div className="mini-header flex items-center justify-between">
         <h2 className="text-[26px] font-medium text-[darkslateblue] px-4 mx-5  mb-6 flex items-center gap-x-2">
           <div>
@@ -31,6 +31,7 @@ export default function Sidebar({ routes, title }) {
       </div>
 
       <div className="links w-full flex flex-col gap-4 ">
+        <h2>Hello</h2>
         {routes &&
           // eslint-disable-next-line react/prop-types
           routes?.map(({ name, path, icon }, index) => (

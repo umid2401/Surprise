@@ -20,10 +20,10 @@ const BaseLayout = ({ SidebarComponent,     HeaderComponent }) => {
           !isSidebarOpen ? "min-900:max-w-calc2" : "min-900:max-w-calc1"
         }`}
       >
-        <header className="sticky top-0 right-0 w-full bg-red-400">
+        <header className="fixed top-0 right-0 z-100 w-full bg-red-400">
           <HeaderComponent />
         </header>
-        <main className="w-full bg-[whitesmoke]">
+        <main className="w-full bg-[whitesmoke] p-5">
           <Outlet />
         </main>
       </div>
