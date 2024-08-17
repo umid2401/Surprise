@@ -1,26 +1,25 @@
 import "./Global.css";
 import { useDispatch } from "react-redux";
 import { toogleSidebar } from "../../features/slice/toogleSidebar";
-import { FaGift, FaTimes } from "react-icons/fa";
+import { FaTimes } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
-
-// eslint-disable-next-line react/prop-types
+import { logo } from "..//..//assets/images";
+// eslint-disable-next-line react/prop-types, no-unused-vars
 export default function Sidebar({ routes, title }) {
   const dispatch = useDispatch();
-  const hideMenu = () =>{
-    if(window.innerWidth<900){
-        dispatch(toogleSidebar())
+  const hideMenu = () => {
+    if (window.innerWidth < 900) {
+      dispatch(toogleSidebar());
     }
-  }
+  };
 
   return (
     <div className="bg-white min-900:h-[100vh] min-300:h-[100%] min-300:w-[80%] sm:w-[50%] min-900:w-full py-8 px-4 border-r border-[lavender]">
       <div className="mini-header flex items-center justify-between">
         <h2 className="text-[26px] font-medium text-[darkslateblue] px-4 mx-5  mb-6 flex items-center gap-x-2">
           <div>
-          <img className="w-28" src="/src/assets/Images/surprise_logo.png" alt="err"/>
+            <img className="w-28" src={logo} alt="err" />
           </div>
-          
         </h2>
         <div
           onClick={() => dispatch(toogleSidebar())}
@@ -31,7 +30,6 @@ export default function Sidebar({ routes, title }) {
       </div>
 
       <div className="links w-full flex flex-col gap-4 ">
-        
         {routes &&
           // eslint-disable-next-line react/prop-types
           routes?.map(({ name, path, icon }, index) => (

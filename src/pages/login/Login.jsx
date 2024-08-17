@@ -2,8 +2,8 @@
 import React, { useState } from "react";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
-import logo from "..//..//assets/Images/surprise_logo.png";
-import login_img from "..//..//assets/Images/loginimage.png";
+
+import {login_image, logo} from "..//..//assets/images"
 const LoginPage = () => {
   const [showPassword, setShowPassword] = useState(false);
   const login_state = { email: "", password: "" };
@@ -27,7 +27,7 @@ const LoginPage = () => {
   return (
     <div className="flex h-screen">
       <div className="w-1/2  h-screen hidden min-900:flex items-center justify-center bg-cover bg-[midnightblue] bg-center">
-        <img className=" object-cover " src={login_img} alt="Login image is not defined" />
+        <img className=" object-cover " src={login_image} alt="Login image is not defined" />
       </div>
 
       <div className="w-full min-900:w-1/2 flex flex-col items-center justify-center  bg-gray-50">
@@ -38,7 +38,7 @@ const LoginPage = () => {
             alt="Logo is not defined"
           />
           <h2 className="text-[17px] text-[#646464] font-medium mb-4 text-center uppercase">
-            Surprise Managerwwwww
+            Surprise Manager
           </h2>
           <form onSubmit={handelSubmit}>
             <div className="mb-4 w-full">

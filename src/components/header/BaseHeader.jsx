@@ -37,7 +37,7 @@ export default function BaseHeader({ title }) {
         <div className="header-text flex items-center gap-x-2">
         <ToogleButton />
           <span className="text-[24px] font-medium text-[darkslateblue]">
-            Surprise
+           {title}
           </span>
         </div>
         <div className="flex items-center space-x-6">
