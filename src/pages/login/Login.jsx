@@ -29,8 +29,8 @@ const LoginPage = () => {
       <div className="w-1/2  h-screen hidden min-900:flex items-center justify-center bg-cover bg-[midnightblue] bg-center">
         <img
           className=" object-cover "
-          src="/src/assets/Images/loginimage.png"
-          alt="errww"
+          src="./src/assets/Images/loginimage.png"
+          alt="er"
         />
       </div>
 
