@@ -19,6 +19,7 @@ import AdminLayout from "./layout/AdminLayout";
 import OwnerLayout from "./layout/OwnerLayout";
 import DriverLayout from "./layout/DriverLayout";
 import PageTitle from "./components/PageTitle";
+import HomePageDashboardOwner from "./pages/ownerPages/HomePageDashboardOwner";
 
 export default function App() {
   return (
@@ -72,6 +73,12 @@ export default function App() {
             
           </Route>
           <Route path="/dashboard/owner" element={<OwnerLayout />}>
+          <Route index path="/dashboard/owner" element={
+            <>
+            <PageTitle title="Owner | HomePage"/>
+            <HomePageDashboardOwner/>
+            </>
+          }/>
           <Route
               path="earn"
               element={

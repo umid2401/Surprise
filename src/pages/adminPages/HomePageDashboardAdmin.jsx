@@ -1,4 +1,4 @@
-import Dashboard from "../../components/adminDashboard/Dashboard";
+import DashboardAdmin from "../../components/adminDashboard/DashboardAdmin";
 
 
 
@@ -6,7 +6,7 @@ import Dashboard from "../../components/adminDashboard/Dashboard";
 export default function HomePageDashboardAdmin() {
   return (
     <div className="text-center"> 
-    <Dashboard/>
+    <DashboardAdmin/>
     </div>
   )
 }

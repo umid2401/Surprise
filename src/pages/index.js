@@ -14,7 +14,7 @@ import Drivermanagment from "./ownerPages/Drivermanagment";
 import Earnings from "./ownerPages/Earnings";
 import Reports from "./ownerPages/Reports";
 import HomePageDashboardAdmin from "./adminPages/HomePageDashboardAdmin";
-import HomePageOwnerDashboard from "./ownerPages/HomePageOwnerDashboard";
+import HomePageOwnerDashboard from "./ownerPages/HomePageDashboardOwner";
 import HomePageDriverDashboard from "./driverPages/HomePageDriverDashboard";
 import Login from "./login/Login";
 export { Driver, History,

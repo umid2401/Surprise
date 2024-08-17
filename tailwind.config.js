@@ -15,6 +15,9 @@ export default {
             'min-900': '900px',
             "min-300": "300px",
           },
+          fontFamily: {
+            inter: ['Inter', 'sans-serif'],
+          },
         },
       },
   };
