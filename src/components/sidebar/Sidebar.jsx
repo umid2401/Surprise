@@ -18,9 +18,9 @@ export default function Sidebar({ routes, title }) {
       <div className="mini-header flex items-center justify-between">
         <h2 className="text-[26px] font-medium text-[darkslateblue] px-4 mx-5  mb-6 flex items-center gap-x-2">
           <div>
-            <FaGift className="sm:text-[26px]" />
+          <img className="w-28" src="/src/assets/Images/surprise_logo.png" alt="err"/>
           </div>
-          <span>{title}</span>
+          
         </h2>
         <div
           onClick={() => dispatch(toogleSidebar())}
