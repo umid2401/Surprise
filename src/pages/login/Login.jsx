@@ -1,25 +1,25 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useState } from "react";
-import { FaEye, FaEyeSlash } from "react-icons/fa"; 
+import { FaEye, FaEyeSlash } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
-
+import logo from "..//..//assets/Images/surprise_logo.png";
+import login_img from "..//..//assets/Images/loginimage.png";
 const LoginPage = () => {
   const [showPassword, setShowPassword] = useState(false);
- const  login_state = {email:"", password:""};
- const [state, setState]=useState(login_state);
- const navigate = useNavigate();
+  const login_state = { email: "", password: "" };
+  const [state, setState] = useState(login_state);
+  const navigate = useNavigate();
 
- const handelChange = (e) =>{
-    const {name, value} =e.target;
-    setState({...state, [name]:value})
- }
- const  handelSubmit = (e) =>{
+  const handelChange = (e) => {
+    const { name, value } = e.target;
+    setState({ ...state, [name]: value });
+  };
+  const handelSubmit = (e) => {
     e.preventDefault();
-    setState({ email: "", password: "" })
+    setState({ email: "", password: "" });
     navigate("/dashboard/admin");
-    console.log(state)
-
-}
+    console.log(state);
+  };
   const togglePasswordVisibility = () => {
     setShowPassword(!showPassword);
   };
@@ -27,16 +27,16 @@ const LoginPage = () => {
   return (
     <div className="flex h-screen">
       <div className="w-1/2  h-screen hidden min-900:flex items-center justify-center bg-cover bg-[midnightblue] bg-center">
-        <img
-          className=" object-cover "
-          src="/src/assets/Images/surprise_logo.png"
-          alt="e"
-        />
+        <img className=" object-cover " src={login_img} alt="Login image is not defined" />
       </div>
 
       <div className="w-full min-900:w-1/2 flex flex-col items-center justify-center  bg-gray-50">
         <div className="max-w-md w-full bg-transparent sm:bg-white sm:shadow-lg  rounded-lg sm:p-8 px-6  space-y-6">
-        <img className="w-28 mx-auto" src="/src/assets/Images/surprise_logo.png" alt="err"/>
+          <img
+            className="w-28 mx-auto"
+            src={logo}
+            alt="Logo is not defined"
+          />
           <h2 className="text-[17px] text-[#646464] font-medium mb-4 text-center uppercase">
             Surprise Managerwwwww
           </h2>
