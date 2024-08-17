@@ -30,7 +30,7 @@ const LoginPage = () => {
         <img
           className=" object-cover "
           src="/src/assets/Images/loginimage.png"
-          alt="err"
+          alt="errww"
         />
       </div>
 
@@ -38,7 +38,7 @@ const LoginPage = () => {
         <div className="max-w-md w-full bg-transparent sm:bg-white sm:shadow-lg  rounded-lg sm:p-8 px-6  space-y-6">
         <img className="w-28 mx-auto" src="/src/assets/Images/surprise_logo.png" alt="err"/>
           <h2 className="text-[17px] text-[#646464] font-medium mb-4 text-center uppercase">
-            Surprise Manager
+            Surprise Managerwwwww
           </h2>
           <form onSubmit={handelSubmit}>
             <div className="mb-4 w-full">
@@ -91,7 +91,7 @@ const LoginPage = () => {
               Login
             </button>
             <p className="mt-4 text-sm text-gray-600 text-center">
-              Dont have an account?{" "}
+              Dont & have an account?{" "}
               <a href="#" className="text-indigo-600 hover:text-indigo-700">
                 Sign Up
               </a>
